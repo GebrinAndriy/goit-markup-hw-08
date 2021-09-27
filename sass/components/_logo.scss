@@ -1,0 +1,25 @@
+.logo-header {
+  margin-right: 93px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #212121;
+  transition-property: transform;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo-header .blue-part-logo {
+  color: #2196f3;
+}
