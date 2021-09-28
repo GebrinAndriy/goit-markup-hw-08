@@ -4,10 +4,23 @@
   }
   &__filter {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    max-width: 480px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      justify-content: center;
+      margin: 0 auto;
+    }
     &__item {
       &:not(:last-child) {
         margin-right: 8px;
+      }
+      &:nth-child(1) {
+        margin-bottom: 15px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 15px;
       }
     }
     &__btn {
@@ -43,12 +56,36 @@
   &__projects {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 40px;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      max-width: 738px;
+      margin: 0 auto;
+      margin-top: 30px;
+      justify-content: left;
+    }
+    @media screen and (min-width: 1600px) {
+      margin-top: 60px;
+      max-width: 1200px;
+    }
     &__item {
-      margin-right: 30px;
-      margin-bottom: 30px;
-      &:nth-child(3n) {
-        margin-right: 0px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        &:nth-child(odd) {
+          margin-right: 30px;
+        }
+      }
+      @media screen and (min-width: 1600px) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+        &:nth-child(3n) {
+          margin-right: 0px;
+        }
       }
     }
     &__link {
@@ -116,5 +153,7 @@
 }
 
 .project-item-with {
-  margin-bottom: 0;
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 0;
+  }
 }
