@@ -322,6 +322,7 @@ header .container {
   padding-top: 10px;
   padding-left: 40px;
   padding-bottom: 48px;
+  z-index: 5;
 }
 
 .menu__socials {
