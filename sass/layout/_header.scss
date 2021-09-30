@@ -280,6 +280,9 @@ header {
         color: #2196f3;
       }
     }
+    &__current {
+      color: #2196f3;
+    }
     &__item {
       &:not(:last-child) {
         margin-bottom: 36px;

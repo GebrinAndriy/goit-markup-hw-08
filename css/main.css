@@ -414,6 +414,10 @@ header .container {
   color: #2196f3;
 }
 
+.menu__navigation__current {
+  color: #2196f3;
+}
+
 .menu__navigation__item:not(:last-child) {
   margin-bottom: 36px;
 }
@@ -811,6 +815,12 @@ header .container {
   display: none;
 }
 
+@media screen and (min-width: 1600px) {
+  .works {
+    display: block;
+  }
+}
+
 .gallery__list {
   display: flex;
 }
@@ -1142,11 +1152,20 @@ header .container {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1600px) {
+  .portfolio__projects__description {
+    align-items: top;
+    justify-content: top;
+  }
 }
 
 .portfolio__projects__link:hover .portfolio__projects__description,
