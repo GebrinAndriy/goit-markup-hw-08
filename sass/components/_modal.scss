@@ -24,7 +24,7 @@
   @media screen and (min-width: 480px) {
     width: 450px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 528px;
   }
 }
@@ -192,7 +192,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 24px;
   }

@@ -10,8 +10,6 @@ address {
   min-width: 290px;
   width: 100%;
   text-align: center;
-  padding-left: 76px;
-  padding-right: 89px;
   &__container {
     align-items: baseline;
     @media screen and (min-width: 768px) {
@@ -19,7 +17,7 @@ address {
       flex-wrap: wrap;
       max-width: 603px;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       flex-wrap: unset;
       max-width: 1200px;
@@ -43,7 +41,7 @@ address {
     @media screen and (min-width: 768px) {
       margin-right: 0 auto;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       text-align: left;
       margin-right: 0;
     }
@@ -95,7 +93,7 @@ address {
       margin-left: 130px;
       margin-top: 0;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       margin-left: 70px;
     }
     &__text {
@@ -105,7 +103,7 @@ address {
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #ffffff;
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         text-align: left;
       }
     }
@@ -133,7 +131,7 @@ address {
       margin-top: 60px;
     }
     margin-top: 60px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       margin-top: 0;
       justify-content: baseline;
       margin: 0;
@@ -147,7 +145,7 @@ address {
       text-transform: uppercase;
       color: #ffffff;
       margin-bottom: 20px;
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         text-align: left;
         justify-content: baseline;
       }
@@ -169,7 +167,7 @@ address {
       @media screen and (min-width: 768px) {
         width: 450px;
       }
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         width: 358px;
         height: 50px;
       }
@@ -195,7 +193,7 @@ address {
       transition-property: background-color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         margin-top: 0;
       }
       &:hover,
@@ -221,7 +219,7 @@ address {
       }
     }
     &__flex {
-      @media screen and (min-width: 1600px) {
+      @media screen and (min-width: 1200px) {
         display: flex;
       }
     }
