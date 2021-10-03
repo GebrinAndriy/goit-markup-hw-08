@@ -41,6 +41,7 @@ address {
     @media screen and (min-width: 1200px) {
       text-align: left;
       margin-right: 0;
+      flex-grow: 1;
     }
     &__logo {
       display: inline-block;
@@ -195,6 +196,7 @@ address {
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       @media screen and (min-width: 1200px) {
         margin-top: 0;
+        margin-left: 16px;
       }
       &:hover,
       &:focus {
