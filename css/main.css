@@ -333,12 +333,15 @@ header .container {
   padding-left: 40px;
   padding-bottom: 48px;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu__socials {
   display: flex;
-  margin-top: 64px;
   position: relative;
+  margin-top: 64px;
 }
 
 .menu__socials__item:not(:last-child) {
@@ -377,7 +380,6 @@ header .container {
 }
 
 .menu__contacts__telef {
-  margin-top: 302px;
   margin-bottom: 32px;
 }
 
@@ -493,9 +495,21 @@ header .container {
   min-width: 320px;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-bg-mobile-2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-bg-tablet.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min-resolution: 1.5dppx), only screen and (min-width: 768px) and (min-resolution: 144dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-bg-tablet-2x.jpg);
   }
 }
 
@@ -504,6 +518,12 @@ header .container {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-bg-desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 1.5), only screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 1200px) and (min-resolution: 1.5dppx), only screen and (min-width: 1200px) and (min-resolution: 144dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-bg-desktop-2x.jpg);
   }
 }
 
@@ -786,6 +806,7 @@ header .container {
   }
   .benefits__item:nth-child(3) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -797,6 +818,18 @@ header .container {
   }
   .benefits__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .benefits__item:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .benefits__item:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  .benefits__item:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .benefits__item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
@@ -889,19 +922,6 @@ header .container {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  max-width: 480px;
-}
-
-@media screen and (min-width: 768px) {
-  .clients__list {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__list {
-    max-width: 1170px;
-  }
 }
 
 .clients__link {
@@ -1211,14 +1231,6 @@ address {
   align-items: baseline;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 603px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
@@ -1241,7 +1253,7 @@ address {
 @media screen and (min-width: 768px) {
   .footer__top__tablet {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
   }
 }
 
@@ -1252,6 +1264,8 @@ address {
 @media screen and (min-width: 768px) {
   .footer__left {
     margin-right: 0 auto;
+    flex-grow: 0;
+    margin-left: 76px;
   }
 }
 
@@ -1274,6 +1288,8 @@ address {
   transition-property: transform;
   transition-duration: 100ms;
   transition-timing-function: linear;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .footer__left__logo:hover, .footer__left__logo:focus {
@@ -1312,8 +1328,8 @@ address {
 
 @media screen and (min-width: 768px) {
   .footer__right {
-    margin-left: 130px;
     margin-top: 0;
+    margin-right: 89px;
   }
 }
 
@@ -1415,6 +1431,7 @@ address {
 @media screen and (min-width: 768px) {
   .footer__form__input {
     width: 450px;
+    margin: 0 auto;
   }
 }
 

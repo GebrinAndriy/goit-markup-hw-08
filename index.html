@@ -49,34 +49,38 @@
             </button>
         </div>
         <div class="menu is-hidden" data-menu>
-            <button class="menu__btn-close" data-menu-close>
-                <svg class="menu__icon-close">
-                    <use href="./images/icon/symbol-defs.svg#icon-menu-close"></use>
-                </svg>
-            </button>
-            <nav class="menu__navigation">
-                <ul class="menu__navigation__list list">
-                    <li class="menu__navigation__item"><a class="menu__navigation__link link current"
-                            href="./index.html">Студия</a></li>
-                    <li class="menu__navigation__item"><a class="menu__navigation__link link"
-                            href="./portfolio.html">Портфолио</a></li>
-                    <li class="menu__navigation__item"><a class="menu__navigation__link link" href="">Контакты</a></li>
+            <div class="menu__between">
+                <button class="menu__btn-close" data-menu-close>
+                    <svg class="menu__icon-close">
+                        <use href="./images/icon/symbol-defs.svg#icon-menu-close"></use>
+                    </svg>
+                </button>
+                <nav class="menu__navigation">
+                    <ul class="menu__navigation__list list">
+                        <li class="menu__navigation__item"><a class="menu__navigation__link link current"
+                                href="./index.html">Студия</a></li>
+                        <li class="menu__navigation__item"><a class="menu__navigation__link link"
+                                href="./portfolio.html">Портфолио</a></li>
+                        <li class="menu__navigation__item"><a class="menu__navigation__link link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu__bottom">
+                <ul class="menu__contacts list">
+                    <li class="menu__contacts__item menu__contacts__telef">
+                         <a class="menu__contacts__link-telef link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="menu__contacts__item menu__contacts__mail">
+                         <a class="menu__contacts__link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="menu__contacts list">
-                <li class="menu__contacts__item menu__contacts__telef">
-                    <a class="menu__contacts__link-telef link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="menu__contacts__item menu__contacts__mail">
-                    <a class="menu__contacts__link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
-            <ul class="menu__socials list">
-                <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Instagram</a></li>
-                <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Twitter</a></li>
-                <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Facebook</a></li>
-                <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Linkedin</a></li>
-            </ul>
+                 <ul class="menu__socials list">
+                    <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Instagram</a></li>
+                    <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Twitter</a></li>
+                    <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Facebook</a></li>
+                    <li class="menu__socials__item"><a href="#" class="menu__socials__link link">Linkedin</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -139,21 +143,21 @@
                 <ul class="gallery__list list">
                     <li class="gallery__item">
                         <picture>
-                            <source srcset="./images/studio/foto-1.jpg">
+                            <source srcset="./images/studio/foto1.jpg 1x,./images/studio/foto1-2x.jpg 2x">
                             <img src="./images/studio/foto-1.jpg" alt="Человек печатает на планшете" width="370" height="294">
                         </picture>
                         <p class="gallery__text">Десктопные приложения</p>
                     </li>
                     <li class="gallery__item">
                         <picture>
-                            <source srcset="./images/studio/foto-2.jpg">
+                            <source srcset="./images/studio/foto2.jpg 1x,./images/studio/foto2-2x.jpg 2x">
                             <img src="./images/studio/foto-2.jpg" alt="Человек печатает на планшете" width="370" height="294">
                         </picture>
                         <p class="gallery__text">Мобильные приложения</p>
                     </li>
                     <li class="gallery__item">
                         <picture>
-                            <source srcset="./images/studio/foto-3.jpg">
+                            <source srcset="./images/studio/foto3.jpg 1x,./images/studio/foto3-2x.jpg 2x">
                             <img src="./images/studio/foto-3.jpg" alt="Человек печатает на планшете" width="370" height="294">
                         </picture>
                         <p class="gallery__text">Дизайнерские решения</p>
@@ -167,7 +171,7 @@
                 <ul class="team__list list">
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/studio/person-1.jpg">
+                            <source srcset="./images/studio/person-1.jpg 1x,./images/studio/person-1-2x.jpg 2x">
                             <img src="./images/studio/person-1.jpg" alt="Работник №1">
                         </picture>
                         <div class="team__content">
@@ -207,7 +211,7 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/studio/person-2.jpg">
+                            <source srcset="./images/studio/person-2.jpg 1x,./images/studio/person-2-2x.jpg 2x">
                             <img src="./images/studio/person-2.jpg" alt="Работник №2">
                         </picture>
                         <div class="team__content">
@@ -247,7 +251,7 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/studio/person-3.jpg">
+                            <source srcset="./images/studio/person-3.jpg 1x,./images/studio/person-3-2x.jpg 2x">
                             <img src="./images/studio/person-3.jpg" alt="Работник №3">
                         </picture>
                         <div class="team__content">
@@ -287,7 +291,7 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/studio/person-4.jpg">
+                            <source srcset="./images/studio/person-4.jpg 1x,./images/studio/person-4-2x.jpg 2x">
                             <img src="./images/studio/person-4.jpg" alt="Работник №4">
                         </picture>
                         <div class="team__content">
